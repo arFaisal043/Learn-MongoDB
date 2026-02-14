@@ -60,3 +60,37 @@ db.movies.find({
     { "imdb.rating": { $gte: 9.0 } }
   ]
 })
+
+
+- $or with $and combination:
+
+// Find movies that are (Action AND from 2000s) OR (Drama AND highly rated)
+db.movies.find({
+  $or: [
+    {
+      $and: [
+        { genres: "Action" },
+        { year: { $gte: 2000 } }
+      ]
+    },
+    {
+      $and: [
+        { genres: "Drama" },
+        { "imdb.rating": { $gte: 8.8 } }
+      ]
+    }
+  ]
+})
+
+
+
+# Simple Memory Aid:
+
+AND = "Give me everything that matches ALL these rules"
+
+OR = "Give me everything that matches ANY of these rules"
+
+NOT = "Give me everything that DOESN'T match this rule"
+
+NOR = "Give me everything that matches NONE of these rules"
+
