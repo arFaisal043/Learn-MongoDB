@@ -9,3 +9,6 @@
    - Aggregation pipeline
 6. # Evaluation Query Operators
    - $regex() 
+   - $mod()
+   - $text()
+7. # JOINING

@@ -310,3 +310,32 @@ db.movies.createIndex({ title: "text" })
 db.movies.find({
   $text: { $search: "dark knight" }
 })
+
+
+
+
+
+
+
+
+
+
+
+______________________________ JOIN ___________________________
+
+
+db.movies.aggregate([
+  {
+    $lookup: {
+      from: "reviews",
+      localField: "title",
+      foreignField: "movie_title",
+      as: "movieReviews"
+    }
+  },
+  {
+    $project: {
+      "title": 1, "year": 1, "movieReviews": 1
+    }
+  }
+])
