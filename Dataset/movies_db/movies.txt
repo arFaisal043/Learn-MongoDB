@@ -1,0 +1,1466 @@
+db.movies.insertMany([
+  {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "imdb": {
+      "rating": 9.0,
+      "votes": 2422345,
+      "id": 468569
+    },
+    "genres": ["Action", "Crime", "Drama"],
+    "rated": "PG-13",
+    "runtime": 152
+  },
+  {
+    "title": "Inception",
+    "year": 2010,
+    "imdb": {
+      "rating": 8.8,
+      "votes": 2123456,
+      "id": 1375666
+    },
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "rated": "PG-13",
+    "runtime": 148
+  },
+  {
+    "title": "The Godfather",
+    "year": 1972,
+    "imdb": {
+      "rating": 9.2,
+      "votes": 1789234,
+      "id": 68646
+    },
+    "genres": ["Crime", "Drama"],
+    "rated": "R",
+    "runtime": 175
+  },
+  {
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "imdb": {
+      "rating": 8.9,
+      "votes": 1892345,
+      "id": 110912
+    },
+    "genres": ["Crime", "Drama"],
+    "rated": "R",
+    "runtime": 154
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "imdb": {
+      "rating": 8.9,
+      "votes": 1678923,
+      "id": 167260
+    },
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "rated": "PG-13",
+    "runtime": 201
+  },
+  {
+    "title": "Fight Club",
+    "year": 1999,
+    "imdb": {
+      "rating": 8.8,
+      "votes": 1956789,
+      "id": 137523
+    },
+    "genres": ["Drama"],
+    "rated": "R",
+    "runtime": 139
+  },
+  {
+    "title": "Forrest Gump",
+    "year": 1994,
+    "imdb": {
+      "rating": 8.8,
+      "votes": 1876543,
+      "id": 109830
+    },
+    "genres": ["Drama", "Romance"],
+    "rated": "PG-13",
+    "runtime": 142
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "imdb": {
+      "rating": 8.7,
+      "votes": 1765432,
+      "id": 133093
+    },
+    "genres": ["Action", "Sci-Fi"],
+    "rated": "R",
+    "runtime": 136
+  },
+  {
+    "title": "Goodfellas",
+    "year": 1990,
+    "imdb": {
+      "rating": 8.7,
+      "votes": 1098765,
+      "id": 98687
+    },
+    "genres": ["Biography", "Crime", "Drama"],
+    "rated": "R",
+    "runtime": 146
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 1654321,
+      "id": 816692
+    },
+    "genres": ["Adventure", "Drama", "Sci-Fi"],
+    "rated": "PG-13",
+    "runtime": 169
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 1324567,
+      "id": 102926
+    },
+    "genres": ["Crime", "Drama", "Thriller"],
+    "rated": "R",
+    "runtime": 118
+  },
+  {
+    "title": "Saving Private Ryan",
+    "year": 1998,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 1287654,
+      "id": 120815
+    },
+    "genres": ["Drama", "War"],
+    "rated": "R",
+    "runtime": 169
+  },
+  {
+    "title": "The Green Mile",
+    "year": 1999,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 1198765,
+      "id": 120689
+    },
+    "genres": ["Crime", "Drama", "Fantasy"],
+    "rated": "R",
+    "runtime": 189
+  },
+  {
+    "title": "Se7en",
+    "year": 1995,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 1523456,
+      "id": 114369
+    },
+    "genres": ["Crime", "Drama", "Mystery"],
+    "rated": "R",
+    "runtime": 127
+  },
+  {
+    "title": "The Usual Suspects",
+    "year": 1995,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 1023456,
+      "id": 114814
+    },
+    "genres": ["Crime", "Mystery", "Thriller"],
+    "rated": "R",
+    "runtime": 106
+  },
+  {
+    "title": "The Lion King",
+    "year": 1994,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 987654,
+      "id": 110357
+    },
+    "genres": ["Animation", "Adventure", "Drama"],
+    "rated": "G",
+    "runtime": 88
+  },
+  {
+    "title": "Gladiator",
+    "year": 2000,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 1434567,
+      "id": 172495
+    },
+    "genres": ["Action", "Adventure", "Drama"],
+    "rated": "R",
+    "runtime": 155
+  },
+  {
+    "title": "The Departed",
+    "year": 2006,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 1234567,
+      "id": 407884
+    },
+    "genres": ["Crime", "Drama", "Thriller"],
+    "rated": "R",
+    "runtime": 151
+  },
+  {
+    "title": "Whiplash",
+    "year": 2014,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 765432,
+      "id": 2582802
+    },
+    "genres": ["Drama", "Music"],
+    "rated": "R",
+    "runtime": 106
+  },
+  {
+    "title": "The Prestige",
+    "year": 2006,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 1234567,
+      "id": 482572
+    },
+    "genres": ["Drama", "Mystery", "Sci-Fi"],
+    "rated": "PG-13",
+    "runtime": 130
+  },
+  {
+    "title": "The Shining",
+    "year": 1980,
+    "imdb": {
+      "rating": 8.4,
+      "votes": 987654,
+      "id": 81505
+    },
+    "genres": ["Drama", "Horror"],
+    "rated": "R",
+    "runtime": 146
+  },
+  {
+    "title": "Apocalypse Now",
+    "year": 1979,
+    "imdb": {
+      "rating": 8.4,
+      "votes": 654321,
+      "id": 78783
+    },
+    "genres": ["Drama", "War"],
+    "rated": "R",
+    "runtime": 153
+  },
+  {
+    "title": "Joker",
+    "year": 2019,
+    "imdb": {
+      "rating": 8.4,
+      "votes": 1123456,
+      "id": 7286456
+    },
+    "genres": ["Crime", "Drama", "Thriller"],
+    "rated": "R",
+    "runtime": 122
+  },
+  {
+    "title": "Parasite",
+    "year": 2019,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 765432,
+      "id": 6751668
+    },
+    "genres": ["Comedy", "Drama", "Thriller"],
+    "rated": "R",
+    "runtime": 132
+  },
+  {
+    "title": "Spider-Man: Into the Spider-Verse",
+    "year": 2018,
+    "imdb": {
+      "rating": 8.4,
+      "votes": 543210,
+      "id": 4633694
+    },
+    "genres": ["Animation", "Action", "Adventure"],
+    "rated": "PG",
+    "runtime": 117
+  },
+  {
+    "title": "Schindler's List",
+    "year": 1993,
+    "imdb": {
+      "rating": 8.9,
+      "votes": 1345678,
+      "id": 108052
+    },
+    "genres": ["Biography", "Drama", "History"],
+    "rated": "R",
+    "runtime": 195
+  },
+  {
+    "title": "The Empire Strikes Back",
+    "year": 1980,
+    "imdb": {
+      "rating": 8.7,
+      "votes": 1345678,
+      "id": 80684
+    },
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "rated": "PG",
+    "runtime": 124
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "imdb": {
+      "rating": 8.8,
+      "votes": 1892345,
+      "id": 120737
+    },
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "rated": "PG-13",
+    "runtime": 178
+  },
+  {
+    "title": "City of God",
+    "year": 2002,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 765432,
+      "id": 317249
+    },
+    "genres": ["Crime", "Drama"],
+    "rated": "R",
+    "runtime": 130
+  },
+  {
+    "title": "The Pianist",
+    "year": 2002,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 876543,
+      "id": 253473
+    },
+    "genres": ["Biography", "Drama", "Music"],
+    "rated": "R",
+    "runtime": 150
+  },
+  {
+    "title": "The Intouchables",
+    "year": 2011,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 876543,
+      "id": 1675434
+    },
+    "genres": ["Biography", "Comedy", "Drama"],
+    "rated": "R",
+    "runtime": 112
+  },
+  {
+    "title": "Modern Times",
+    "year": 1936,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 234567,
+      "id": 27978
+    },
+    "genres": ["Comedy", "Drama", "Family"],
+    "rated": "G",
+    "runtime": 87
+  },
+  {
+    "title": "Once Upon a Time in the West",
+    "year": 1968,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 345678,
+      "id": 64116
+    },
+    "genres": ["Western"],
+    "rated": "PG-13",
+    "runtime": 165
+  },
+  {
+    "title": "Rear Window",
+    "year": 1954,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 456789,
+      "id": 47396
+    },
+    "genres": ["Mystery", "Thriller"],
+    "rated": "PG",
+    "runtime": 112
+  },
+  {
+    "title": "Alien",
+    "year": 1979,
+    "imdb": {
+      "rating": 8.4,
+      "votes": 876543,
+      "id": 78748
+    },
+    "genres": ["Horror", "Sci-Fi"],
+    "rated": "R",
+    "runtime": 117
+  },
+  {
+    "title": "Die Hard",
+    "year": 1988,
+    "imdb": {
+      "rating": 8.2,
+      "votes": 876543,
+      "id": 95016
+    },
+    "genres": ["Action", "Thriller"],
+    "rated": "R",
+    "runtime": 132
+  },
+  {
+    "title": "The Big Lebowski",
+    "year": 1998,
+    "imdb": {
+      "rating": 8.1,
+      "votes": 789012,
+      "id": 118713
+    },
+    "genres": ["Comedy", "Crime"],
+    "rated": "R",
+    "runtime": 117
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "imdb": {
+      "rating": 8.1,
+      "votes": 789012,
+      "id": 2278388
+    },
+    "genres": ["Adventure", "Comedy", "Crime"],
+    "rated": "R",
+    "runtime": 99
+  },
+  {
+    "title": "Blade Runner 2049",
+    "year": 2017,
+    "imdb": {
+      "rating": 8.0,
+      "votes": 567890,
+      "id": 1856101
+    },
+    "genres": ["Action", "Drama", "Sci-Fi"],
+    "rated": "R",
+    "runtime": 164
+  },
+  {
+    "title": "Soul",
+    "year": 2020,
+    "imdb": {
+      "rating": 8.0,
+      "votes": 345678,
+      "id": 2948372
+    },
+    "genres": ["Animation", "Adventure", "Comedy"],
+    "rated": "PG",
+    "runtime": 100
+  },
+  {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "imdb": {
+      "rating": 9.0,
+      "votes": 2422345,
+      "id": 468569
+    },
+    "genres": ["Action", "Crime", "Drama"],
+    "rated": "PG-13",
+    "runtime": 152
+  },
+  {
+    "title": "Inception",
+    "year": 2010,
+    "imdb": {
+      "rating": 8.8,
+      "votes": 2123456,
+      "id": 1375666
+    },
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "rated": "PG-13",
+    "runtime": 148
+  },
+  {
+    "title": "The Godfather",
+    "year": 1972,
+    "imdb": {
+      "rating": 9.2,
+      "votes": 1789234,
+      "id": 68646
+    },
+    "genres": ["Crime", "Drama"],
+    "rated": "R",
+    "runtime": 175
+  },
+  {
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "imdb": {
+      "rating": 8.9,
+      "votes": 1892345,
+      "id": 110912
+    },
+    "genres": ["Crime", "Drama"],
+    "rated": "R",
+    "runtime": 154
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "imdb": {
+      "rating": 8.9,
+      "votes": 1678923,
+      "id": 167260
+    },
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "rated": "PG-13",
+    "runtime": 201
+  },
+  {
+    "title": "Fight Club",
+    "year": 1999,
+    "imdb": {
+      "rating": 8.8,
+      "votes": 1956789,
+      "id": 137523
+    },
+    "genres": ["Drama"],
+    "rated": "R",
+    "runtime": 139
+  },
+  {
+    "title": "Forrest Gump",
+    "year": 1994,
+    "imdb": {
+      "rating": 8.8,
+      "votes": 1876543,
+      "id": 109830
+    },
+    "genres": ["Drama", "Romance"],
+    "rated": "PG-13",
+    "runtime": 142
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "imdb": {
+      "rating": 8.7,
+      "votes": 1765432,
+      "id": 133093
+    },
+    "genres": ["Action", "Sci-Fi"],
+    "rated": "R",
+    "runtime": 136
+  },
+  {
+    "title": "Goodfellas",
+    "year": 1990,
+    "imdb": {
+      "rating": 8.7,
+      "votes": 1098765,
+      "id": 98687
+    },
+    "genres": ["Biography", "Crime", "Drama"],
+    "rated": "R",
+    "runtime": 146
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 1654321,
+      "id": 816692
+    },
+    "genres": ["Adventure", "Drama", "Sci-Fi"],
+    "rated": "PG-13",
+    "runtime": 169
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 1324567,
+      "id": 102926
+    },
+    "genres": ["Crime", "Drama", "Thriller"],
+    "rated": "R",
+    "runtime": 118
+  },
+  {
+    "title": "Saving Private Ryan",
+    "year": 1998,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 1287654,
+      "id": 120815
+    },
+    "genres": ["Drama", "War"],
+    "rated": "R",
+    "runtime": 169
+  },
+  {
+    "title": "The Green Mile",
+    "year": 1999,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 1198765,
+      "id": 120689
+    },
+    "genres": ["Crime", "Drama", "Fantasy"],
+    "rated": "R",
+    "runtime": 189
+  },
+  {
+    "title": "Se7en",
+    "year": 1995,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 1523456,
+      "id": 114369
+    },
+    "genres": ["Crime", "Drama", "Mystery"],
+    "rated": "R",
+    "runtime": 127
+  },
+  {
+    "title": "The Usual Suspects",
+    "year": 1995,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 1023456,
+      "id": 114814
+    },
+    "genres": ["Crime", "Mystery", "Thriller"],
+    "rated": "R",
+    "runtime": 106
+  },
+  {
+    "title": "The Lion King",
+    "year": 1994,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 987654,
+      "id": 110357
+    },
+    "genres": ["Animation", "Adventure", "Drama"],
+    "rated": "G",
+    "runtime": 88
+  },
+  {
+    "title": "Gladiator",
+    "year": 2000,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 1434567,
+      "id": 172495
+    },
+    "genres": ["Action", "Adventure", "Drama"],
+    "rated": "R",
+    "runtime": 155
+  },
+  {
+    "title": "The Departed",
+    "year": 2006,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 1234567,
+      "id": 407884
+    },
+    "genres": ["Crime", "Drama", "Thriller"],
+    "rated": "R",
+    "runtime": 151
+  },
+  {
+    "title": "Whiplash",
+    "year": 2014,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 765432,
+      "id": 2582802
+    },
+    "genres": ["Drama", "Music"],
+    "rated": "R",
+    "runtime": 106
+  },
+  {
+    "title": "The Prestige",
+    "year": 2006,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 1234567,
+      "id": 482572
+    },
+    "genres": ["Drama", "Mystery", "Sci-Fi"],
+    "rated": "PG-13",
+    "runtime": 130
+  },
+  {
+    "title": "The Shining",
+    "year": 1980,
+    "imdb": {
+      "rating": 8.4,
+      "votes": 987654,
+      "id": 81505
+    },
+    "genres": ["Drama", "Horror"],
+    "rated": "R",
+    "runtime": 146
+  },
+  {
+    "title": "Apocalypse Now",
+    "year": 1979,
+    "imdb": {
+      "rating": 8.4,
+      "votes": 654321,
+      "id": 78783
+    },
+    "genres": ["Drama", "War"],
+    "rated": "R",
+    "runtime": 153
+  },
+  {
+    "title": "Joker",
+    "year": 2019,
+    "imdb": {
+      "rating": 8.4,
+      "votes": 1123456,
+      "id": 7286456
+    },
+    "genres": ["Crime", "Drama", "Thriller"],
+    "rated": "R",
+    "runtime": 122
+  },
+  {
+    "title": "Parasite",
+    "year": 2019,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 765432,
+      "id": 6751668
+    },
+    "genres": ["Comedy", "Drama", "Thriller"],
+    "rated": "R",
+    "runtime": 132
+  },
+  {
+    "title": "Spider-Man: Into the Spider-Verse",
+    "year": 2018,
+    "imdb": {
+      "rating": 8.4,
+      "votes": 543210,
+      "id": 4633694
+    },
+    "genres": ["Animation", "Action", "Adventure"],
+    "rated": "PG",
+    "runtime": 117
+  },
+  {
+    "title": "Schindler's List",
+    "year": 1993,
+    "imdb": {
+      "rating": 8.9,
+      "votes": 1345678,
+      "id": 108052
+    },
+    "genres": ["Biography", "Drama", "History"],
+    "rated": "R",
+    "runtime": 195
+  },
+  {
+    "title": "The Empire Strikes Back",
+    "year": 1980,
+    "imdb": {
+      "rating": 8.7,
+      "votes": 1345678,
+      "id": 80684
+    },
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "rated": "PG",
+    "runtime": 124
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "imdb": {
+      "rating": 8.8,
+      "votes": 1892345,
+      "id": 120737
+    },
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "rated": "PG-13",
+    "runtime": 178
+  },
+  {
+    "title": "City of God",
+    "year": 2002,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 765432,
+      "id": 317249
+    },
+    "genres": ["Crime", "Drama"],
+    "rated": "R",
+    "runtime": 130
+  },
+  {
+    "title": "The Pianist",
+    "year": 2002,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 876543,
+      "id": 253473
+    },
+    "genres": ["Biography", "Drama", "Music"],
+    "rated": "R",
+    "runtime": 150
+  },
+  {
+    "title": "The Intouchables",
+    "year": 2011,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 876543,
+      "id": 1675434
+    },
+    "genres": ["Biography", "Comedy", "Drama"],
+    "rated": "R",
+    "runtime": 112
+  },
+  {
+    "title": "Modern Times",
+    "year": 1936,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 234567,
+      "id": 27978
+    },
+    "genres": ["Comedy", "Drama", "Family"],
+    "rated": "G",
+    "runtime": 87
+  },
+  {
+    "title": "Once Upon a Time in the West",
+    "year": 1968,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 345678,
+      "id": 64116
+    },
+    "genres": ["Western"],
+    "rated": "PG-13",
+    "runtime": 165
+  },
+  {
+    "title": "Rear Window",
+    "year": 1954,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 456789,
+      "id": 47396
+    },
+    "genres": ["Mystery", "Thriller"],
+    "rated": "PG",
+    "runtime": 112
+  },
+  {
+    "title": "Alien",
+    "year": 1979,
+    "imdb": {
+      "rating": 8.4,
+      "votes": 876543,
+      "id": 78748
+    },
+    "genres": ["Horror", "Sci-Fi"],
+    "rated": "R",
+    "runtime": 117
+  },
+  {
+    "title": "Die Hard",
+    "year": 1988,
+    "imdb": {
+      "rating": 8.2,
+      "votes": 876543,
+      "id": 95016
+    },
+    "genres": ["Action", "Thriller"],
+    "rated": "R",
+    "runtime": 132
+  },
+  {
+    "title": "The Big Lebowski",
+    "year": 1998,
+    "imdb": {
+      "rating": 8.1,
+      "votes": 789012,
+      "id": 118713
+    },
+    "genres": ["Comedy", "Crime"],
+    "rated": "R",
+    "runtime": 117
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "imdb": {
+      "rating": 8.1,
+      "votes": 789012,
+      "id": 2278388
+    },
+    "genres": ["Adventure", "Comedy", "Crime"],
+    "rated": "R",
+    "runtime": 99
+  },
+  {
+    "title": "Blade Runner 2049",
+    "year": 2017,
+    "imdb": {
+      "rating": 8.0,
+      "votes": 567890,
+      "id": 1856101
+    },
+    "genres": ["Action", "Drama", "Sci-Fi"],
+    "rated": "R",
+    "runtime": 164
+  },
+  {
+    "title": "Soul",
+    "year": 2020,
+    "imdb": {
+      "rating": 8.0,
+      "votes": 345678,
+      "id": 2948372
+    },
+    "genres": ["Animation", "Adventure", "Comedy"],
+    "rated": "PG",
+    "runtime": 100
+  },
+  {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "imdb": {
+      "rating": 9.0,
+      "votes": 2422345,
+      "id": 468569
+    },
+    "genres": ["Action", "Crime", "Drama"],
+    "rated": "PG-13",
+    "runtime": 152
+  },
+  {
+    "title": "Inception",
+    "year": 2010,
+    "imdb": {
+      "rating": 8.8,
+      "votes": 2123456,
+      "id": 1375666
+    },
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "rated": "PG-13",
+    "runtime": 148
+  },
+  {
+    "title": "The Godfather",
+    "year": 1972,
+    "imdb": {
+      "rating": 9.2,
+      "votes": 1789234,
+      "id": 68646
+    },
+    "genres": ["Crime", "Drama"],
+    "rated": "R",
+    "runtime": 175
+  },
+  {
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "imdb": {
+      "rating": 8.9,
+      "votes": 1892345,
+      "id": 110912
+    },
+    "genres": ["Crime", "Drama"],
+    "rated": "R",
+    "runtime": 154
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "imdb": {
+      "rating": 8.9,
+      "votes": 1678923,
+      "id": 167260
+    },
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "rated": "PG-13",
+    "runtime": 201
+  },
+  {
+    "title": "Fight Club",
+    "year": 1999,
+    "imdb": {
+      "rating": 8.8,
+      "votes": 1956789,
+      "id": 137523
+    },
+    "genres": ["Drama"],
+    "rated": "R",
+    "runtime": 139
+  },
+  {
+    "title": "Forrest Gump",
+    "year": 1994,
+    "imdb": {
+      "rating": 8.8,
+      "votes": 1876543,
+      "id": 109830
+    },
+    "genres": ["Drama", "Romance"],
+    "rated": "PG-13",
+    "runtime": 142
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "imdb": {
+      "rating": 8.7,
+      "votes": 1765432,
+      "id": 133093
+    },
+    "genres": ["Action", "Sci-Fi"],
+    "rated": "R",
+    "runtime": 136
+  },
+  {
+    "title": "Goodfellas",
+    "year": 1990,
+    "imdb": {
+      "rating": 8.7,
+      "votes": 1098765,
+      "id": 98687
+    },
+    "genres": ["Biography", "Crime", "Drama"],
+    "rated": "R",
+    "runtime": 146
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 1654321,
+      "id": 816692
+    },
+    "genres": ["Adventure", "Drama", "Sci-Fi"],
+    "rated": "PG-13",
+    "runtime": 169
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 1324567,
+      "id": 102926
+    },
+    "genres": ["Crime", "Drama", "Thriller"],
+    "rated": "R",
+    "runtime": 118
+  },
+  {
+    "title": "Saving Private Ryan",
+    "year": 1998,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 1287654,
+      "id": 120815
+    },
+    "genres": ["Drama", "War"],
+    "rated": "R",
+    "runtime": 169
+  },
+  {
+    "title": "The Green Mile",
+    "year": 1999,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 1198765,
+      "id": 120689
+    },
+    "genres": ["Crime", "Drama", "Fantasy"],
+    "rated": "R",
+    "runtime": 189
+  },
+  {
+    "title": "Se7en",
+    "year": 1995,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 1523456,
+      "id": 114369
+    },
+    "genres": ["Crime", "Drama", "Mystery"],
+    "rated": "R",
+    "runtime": 127
+  },
+  {
+    "title": "The Usual Suspects",
+    "year": 1995,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 1023456,
+      "id": 114814
+    },
+    "genres": ["Crime", "Mystery", "Thriller"],
+    "rated": "R",
+    "runtime": 106
+  },
+  {
+    "title": "The Lion King",
+    "year": 1994,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 987654,
+      "id": 110357
+    },
+    "genres": ["Animation", "Adventure", "Drama"],
+    "rated": "G",
+    "runtime": 88
+  },
+  {
+    "title": "Gladiator",
+    "year": 2000,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 1434567,
+      "id": 172495
+    },
+    "genres": ["Action", "Adventure", "Drama"],
+    "rated": "R",
+    "runtime": 155
+  },
+  {
+    "title": "The Departed",
+    "year": 2006,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 1234567,
+      "id": 407884
+    },
+    "genres": ["Crime", "Drama", "Thriller"],
+    "rated": "R",
+    "runtime": 151
+  },
+  {
+    "title": "Whiplash",
+    "year": 2014,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 765432,
+      "id": 2582802
+    },
+    "genres": ["Drama", "Music"],
+    "rated": "R",
+    "runtime": 106
+  },
+  {
+    "title": "The Prestige",
+    "year": 2006,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 1234567,
+      "id": 482572
+    },
+    "genres": ["Drama", "Mystery", "Sci-Fi"],
+    "rated": "PG-13",
+    "runtime": 130
+  },
+  {
+    "title": "The Shining",
+    "year": 1980,
+    "imdb": {
+      "rating": 8.4,
+      "votes": 987654,
+      "id": 81505
+    },
+    "genres": ["Drama", "Horror"],
+    "rated": "R",
+    "runtime": 146
+  },
+  {
+    "title": "Apocalypse Now",
+    "year": 1979,
+    "imdb": {
+      "rating": 8.4,
+      "votes": 654321,
+      "id": 78783
+    },
+    "genres": ["Drama", "War"],
+    "rated": "R",
+    "runtime": 153
+  },
+  {
+    "title": "Joker",
+    "year": 2019,
+    "imdb": {
+      "rating": 8.4,
+      "votes": 1123456,
+      "id": 7286456
+    },
+    "genres": ["Crime", "Drama", "Thriller"],
+    "rated": "R",
+    "runtime": 122
+  },
+  {
+    "title": "Parasite",
+    "year": 2019,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 765432,
+      "id": 6751668
+    },
+    "genres": ["Comedy", "Drama", "Thriller"],
+    "rated": "R",
+    "runtime": 132
+  },
+  {
+    "title": "Spider-Man: Into the Spider-Verse",
+    "year": 2018,
+    "imdb": {
+      "rating": 8.4,
+      "votes": 543210,
+      "id": 4633694
+    },
+    "genres": ["Animation", "Action", "Adventure"],
+    "rated": "PG",
+    "runtime": 117
+  },
+  {
+    "title": "Schindler's List",
+    "year": 1993,
+    "imdb": {
+      "rating": 8.9,
+      "votes": 1345678,
+      "id": 108052
+    },
+    "genres": ["Biography", "Drama", "History"],
+    "rated": "R",
+    "runtime": 195
+  },
+  {
+    "title": "The Empire Strikes Back",
+    "year": 1980,
+    "imdb": {
+      "rating": 8.7,
+      "votes": 1345678,
+      "id": 80684
+    },
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "rated": "PG",
+    "runtime": 124
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "imdb": {
+      "rating": 8.8,
+      "votes": 1892345,
+      "id": 120737
+    },
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "rated": "PG-13",
+    "runtime": 178
+  },
+  {
+    "title": "City of God",
+    "year": 2002,
+    "imdb": {
+      "rating": 8.6,
+      "votes": 765432,
+      "id": 317249
+    },
+    "genres": ["Crime", "Drama"],
+    "rated": "R",
+    "runtime": 130
+  },
+  {
+    "title": "The Pianist",
+    "year": 2002,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 876543,
+      "id": 253473
+    },
+    "genres": ["Biography", "Drama", "Music"],
+    "rated": "R",
+    "runtime": 150
+  },
+  {
+    "title": "The Intouchables",
+    "year": 2011,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 876543,
+      "id": 1675434
+    },
+    "genres": ["Biography", "Comedy", "Drama"],
+    "rated": "R",
+    "runtime": 112
+  },
+  {
+    "title": "Modern Times",
+    "year": 1936,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 234567,
+      "id": 27978
+    },
+    "genres": ["Comedy", "Drama", "Family"],
+    "rated": "G",
+    "runtime": 87
+  },
+  {
+    "title": "Once Upon a Time in the West",
+    "year": 1968,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 345678,
+      "id": 64116
+    },
+    "genres": ["Western"],
+    "rated": "PG-13",
+    "runtime": 165
+  },
+  {
+    "title": "Rear Window",
+    "year": 1954,
+    "imdb": {
+      "rating": 8.5,
+      "votes": 456789,
+      "id": 47396
+    },
+    "genres": ["Mystery", "Thriller"],
+    "rated": "PG",
+    "runtime": 112
+  },
+  {
+    "title": "Alien",
+    "year": 1979,
+    "imdb": {
+      "rating": 8.4,
+      "votes": 876543,
+      "id": 78748
+    },
+    "genres": ["Horror", "Sci-Fi"],
+    "rated": "R",
+    "runtime": 117
+  },
+  {
+    "title": "Die Hard",
+    "year": 1988,
+    "imdb": {
+      "rating": 8.2,
+      "votes": 876543,
+      "id": 95016
+    },
+    "genres": ["Action", "Thriller"],
+    "rated": "R",
+    "runtime": 132
+  },
+  {
+    "title": "The Big Lebowski",
+    "year": 1998,
+    "imdb": {
+      "rating": 8.1,
+      "votes": 789012,
+      "id": 118713
+    },
+    "genres": ["Comedy", "Crime"],
+    "rated": "R",
+    "runtime": 117
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "imdb": {
+      "rating": 8.1,
+      "votes": 789012,
+      "id": 2278388
+    },
+    "genres": ["Adventure", "Comedy", "Crime"],
+    "rated": "R",
+    "runtime": 99
+  },
+  {
+    "title": "Blade Runner 2049",
+    "year": 2017,
+    "imdb": {
+      "rating": 8.0,
+      "votes": 567890,
+      "id": 1856101
+    },
+    "genres": ["Action", "Drama", "Sci-Fi"],
+    "rated": "R",
+    "runtime": 164
+  },
+  {
+    "title": "Soul",
+    "year": 2020,
+    "imdb": {
+      "rating": 8.0,
+      "votes": 345678,
+      "id": 2948372
+    },
+    "genres": ["Animation", "Adventure", "Comedy"],
+    "rated": "PG",
+    "runtime": 100
+  },
+  {
+    "title": "The Godfather",
+    "year": 1972,
+    "imdb": {
+      "rating": 9.2,
+      "votes": 1789234,
+      "id": 68646
+    },
+    "genres": ["Crime", "Drama"],
+    "rated": "R",
+    "runtime": 175
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "imdb": {
+      "rating": 8.7,
+      "votes": 1765432,
+      "id": 133093
+    },
+    "genres": ["Action", "Sci-Fi"],
+    "rated": "R",
+    "runtime": 136
+  }
+])

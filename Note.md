@@ -145,6 +145,14 @@ db.movies.find(
 
 
 
+# Skip data:
+
+db.movies.find(
+  { year: {$gt: 2010} },
+  {title: 1, year: 1, 'imdb.rating': 1}
+).sort({'imdb.rating': -1}).skip(3).limit(3)
+
+
 
 # Distinct: check unique values
 
@@ -188,6 +196,13 @@ db.movies.aggregate([
 ]).sort({avgRating: 1})
 
 
+db.movies.aggregate([
+  { $group: {
+    _id: "$year",
+    frequency: { $sum: 1 }
+  }},
+  { $sort: { frequency: -1 }}
+])
 
 
 2️⃣ Aggregation Pipeline Concept:
@@ -197,12 +212,12 @@ Stage 1  →  Stage 2  →  Stage 3  →  Stage 4  →  Result
 ($match)    ($group)    ($sort)     ($project)
 - Each stage transforms the data and passes it to the next stage.
 
-
+- Example 1:
 db.movies.aggregate([
   // Stage 1: Filter only R-rated movies
   { $match: { rated: "R" } },
   
-  // Stage 2: Group by year and calculate average rating
+  // Stage 2: Group by year and calculate average rating, counts
   { $group: { 
     _id: "$year", 
     avgRating: { $avg: "$imdb.rating" },
@@ -219,3 +234,79 @@ db.movies.aggregate([
     movieCount: "$count"
   } }
 ])
+
+
+- Example 2: find max and min rating each year
+
+db.movies.aggregate([
+  { $group: {
+    _id: "$year",
+    maxRating: { $max: "$imdb.rating"},
+    minRating: { $min: "$imdb.rating"}
+  }},
+  
+  { $project: {
+    title: 1,
+    highRating: "$maxRating",
+    lowRating: "$minRating"
+  } }
+])
+
+
+
+
+
+________________________ Evaluation Query Operators ____________________________
+
+
+Operator	              Description	                                                          Use Case
+$mod	        Matches documents where field value modulo divisor equals remainder	      Find even/odd years
+
+$regex	      Matches documents using regular expressions	                              Pattern matching in text
+
+$text	        Performs text search on indexed fields	                                  Search movie descriptions
+
+$where	      Matches using JavaScript expression	                                      Complex custom logic
+
+$expr	        Allows aggregation expressions in queries	                                Compare fields within document
+
+$jsonSchema	  Validates documents against JSON schema	                                  Schema validation
+
+
+
+- 1. $regex():
+
+// case sensitive:
+db.movies.find({
+  title: { $regex: "ring" }
+})
+
+// case insensitive:
+db.movies.find({
+  title: { $regex: "ring", $options: "i" }
+})
+
+
+- 2. $mod():
+
+// Find movies released in even years (year % 2 == 0)
+db.movies.find({
+  year: { $mod: [2, 0] }
+})
+
+// Find movies released in odd years (year % 2 == 1)
+db.movies.find({
+  year: { $mod: [2, 1] }
+})
+
+
+
+- 3. $text() - Text Search Operator -> (Requires a text index on the field)
+
+// First, create a text index
+db.movies.createIndex({ title: "text" })
+
+// Search for movies containing "dark" or "knight"
+db.movies.find({
+  $text: { $search: "dark knight" }
+})
