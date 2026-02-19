@@ -429,3 +429,30 @@ output:
     }
   ]
 }
+
+
+
+
+
+
+_______________________________________________________________
+
+📋 Conditional Operators: $cond - If-then-else ternary operator
+
+
+db.movies.aggregate([
+  {
+    $project: {
+      title: 1,
+      year: 1,
+      rating: "$imdb.rating",
+      category: {
+        $cond: {
+          if: { $gte: ["$imdb.rating", 8.5] },
+          then: "Excellent",
+          else: "Good"
+        }
+      }
+    }
+  }
+])
