@@ -316,11 +316,6 @@ db.movies.find({
 
 
 
-
-
-
-
-
 ______________________________ JOIN ___________________________
 
 
@@ -339,3 +334,98 @@ db.movies.aggregate([
     }
   }
 ])
+
+
+
+
+
+________________________________________________________________
+
+📚 What is $facet?
+
+- $facet is a powerful aggregation stage that allows you to process multiple aggregation pipelines within a single stage on the same set of input documents. It's like running several aggregations in parallel!
+
+📊 Basic Syntax:
+
+db.collection.aggregate([
+  {
+    $facet: {
+      "output1": [ pipeline1 ],
+      "output2": [ pipeline2 ],
+      "output3": [ pipeline3 ]
+      // ... as many as you want
+    }
+  }
+])
+
+
+🎯 Benefits of $facet:
+
+# Without $facet:	                            With $facet:
+5 separate queries to database	              1 single query
+Data processed 5 times	                      Data processed once
+Network overhead ×5	                          Minimal network overhead
+Manual combination of results	                Automatic combination
+
+
+input: 
+
+db.movies.aggregate([
+  {
+    $facet: {
+      // Pipeline 1: Count movies by rating category
+      "byRating": [
+        {
+          $group: {
+            _id: "$rated",
+            count: { $sum: 1 }
+          }
+        },
+        { $sort: { count: -1 } }
+      ],
+      // Pipeline 2: Overall stats
+      "overallStats": [
+        {
+          $group: {
+            _id: null,
+            totalMovies: { $sum: 1 },
+            avgRating: { $avg: "$imdb.rating" },
+            avgRintime: { $avg: "$runtime" }
+          }
+        }
+      ]
+    }
+  }
+])
+
+
+output:
+
+{
+  byRating: [
+    {
+      _id: 'R',
+      count: 80
+    },
+    {
+      _id: 'PG-13',
+      count: 24
+    },
+    {
+      _id: 'PG',
+      count: 12
+    },
+    {
+      _id: 'G',
+      count: 6
+    }
+  ],
+  overallStats: [
+    {
+      _id: null,
+      totalMovies: 122,
+      avgRating: 8.561475409836065,
+      avgRintime: 139.0983606557377
+    }
+  ]
+}
